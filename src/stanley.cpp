@@ -1,5 +1,3 @@
-#include <iostream>
-#include <math.h>
 #include "stanley.h"
 
 void stanleyController::setInputError(const float& cross_track_error,const float& heading_angle)
@@ -20,6 +18,5 @@ void stanleyController::execute()
 
 float stanleyController::getOutput() const
 {
-    //std::cout << "Steering Angle: " << steering_angle_ << std::endl;
     return steering_angle_;
 }
